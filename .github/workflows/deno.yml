@@ -36,12 +36,12 @@ jobs:
       - name: Start server
         run: deno run --allow-read --allow-net --allow-env main.ts &
         env:
-          PORT: 3000
+          PORT: 8000
 
       - name: Wait for server to start
         run: |
           for i in {1..10}; do
-            if nc -z localhost 3000; then
+            if nc -z localhost 8000; then
               echo "Server is up!"
               break
             fi
