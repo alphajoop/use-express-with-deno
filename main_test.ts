@@ -1,6 +1,6 @@
 import { assert, assertEquals } from "https://deno.land/std@0.182.0/testing/asserts.ts";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://localhost:8000";
 
 Deno.test("GET /", async () => {
   const response = await fetch(`${baseUrl}/`);
