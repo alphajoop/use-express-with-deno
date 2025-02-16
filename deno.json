@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-read --allow-net --allow-env --env-file=.env --watch main.ts",
+    "start": "deno run --allow-read --allow-net --allow-env --env-file=.env main.ts",
+    "test": "deno test --allow-net"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "deploy": {
+    "project": "b4c60c5a-012f-4b79-8e78-813368c0db92",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
